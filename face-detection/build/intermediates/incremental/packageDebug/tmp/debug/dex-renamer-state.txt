@@ -1,7 +1,0 @@
-#Sun Jun 13 17:29:56 CST 2021
-base.0=/Users/huanwenguo/work/android/SmartGuider/face-detection/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
-path.1=classes_0.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=/Users/huanwenguo/work/android/SmartGuider/face-detection/build/intermediates/dex/debug/mergeLibDexDebug/classes_0.dex

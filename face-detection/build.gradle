@@ -9,8 +9,6 @@ android {
         versionCode 301
         versionName "3.01"
 
-        println("xxxx " + project(':sdk').projectDir)
-
         externalNativeBuild {
             cmake {
                 arguments "-DOpenCV_DIR=" + project(':sdk').projectDir + "/native/jni",
