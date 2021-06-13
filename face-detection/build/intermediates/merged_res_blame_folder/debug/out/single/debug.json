@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/huanwenguo/work/android/SmartGuider/face-detection/build/intermediates/res/merged/debug/drawable_icon.png.flat",
+        "source": "/Users/huanwenguo/work/android/SmartGuider/face-detection/res/drawable/icon.png"
+    },
+    {
+        "merged": "/Users/huanwenguo/work/android/SmartGuider/face-detection/build/intermediates/res/merged/debug/layout_face_detect_surface_view.xml.flat",
+        "source": "/Users/huanwenguo/work/android/SmartGuider/face-detection/res/layout/face_detect_surface_view.xml"
+    },
+    {
+        "merged": "/Users/huanwenguo/work/android/SmartGuider/face-detection/build/intermediates/res/merged/debug/raw_lbpcascade_frontalface.xml.flat",
+        "source": "/Users/huanwenguo/work/android/SmartGuider/face-detection/res/raw/lbpcascade_frontalface.xml"
+    }
+]
