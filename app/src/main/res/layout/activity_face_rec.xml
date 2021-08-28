@@ -21,4 +21,12 @@
         android:layout_height="60dp"
         android:layout_below="@id/java_btn"
         android:text="native"/>
+
+
+    <Button
+        android:id="@+id/serial_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/native_btn"
+        android:text="serial"/>
 </RelativeLayout>

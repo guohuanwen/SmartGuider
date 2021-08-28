@@ -1,8 +1,11 @@
 package com.bigwen.guider;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import com.bigwen.guider.serial.SerialActivity;
 
 import org.opencv.android.CameraActivity;
 import org.opencv.android.CameraBridgeViewBase;
@@ -11,17 +14,16 @@ import org.opencv.core.Mat;
 import java.util.Collections;
 import java.util.List;
 
-public class MainActivity extends CameraActivity {
+public class FaceRecActivity extends CameraActivity {
 
     private static final String TAG = "MainActivity";
     private OpenCVService openCVService;
-    private SerialService serialService;
     private CameraBridgeViewBase cameraView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_face_rec);
         cameraView = findViewById(R.id.fd_activity_surface_view);
         findViewById(R.id.java_btn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,11 +39,14 @@ public class MainActivity extends CameraActivity {
             }
         });
 
-        openCVService = new OpenCVService(this);
-        serialService = new SerialService(this, msg -> {
-
+        findViewById(R.id.serial_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(v.getContext(), SerialActivity.class));
+            }
         });
-        serialService.connect();
+
+        openCVService = new OpenCVService(this);
 
         cameraView.setVisibility(CameraBridgeViewBase.VISIBLE);
         cameraView.setCvCameraViewListener(new CameraBridgeViewBase.CvCameraViewListener2() {
